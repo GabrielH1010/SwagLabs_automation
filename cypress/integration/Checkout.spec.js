@@ -8,8 +8,12 @@ describe('Fluxo de checkout', function() {
         cy.loginError()
         cy.loginSuccess()
     })
-    it('Validar se existe produto cadastrado', function() {
+    it('Validação da existência de produto cadastrado', function() {
         cy.get('.inventory_list > :nth-child(1)').should('be.visible')
+    })
+    it('Validação se o produto tem imagem e descrição cadastrada', function() {
+        cy.get('.inventory_item_img').should('be.visible')
+        cy.get('.inventory_item_description').should('be.visible')
     })
     
     // it('Preencher os campos obrigatórios e enviar o formulário', 
