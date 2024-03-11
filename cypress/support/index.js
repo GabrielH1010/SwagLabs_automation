@@ -1,1 +1,3 @@
-import './commands'
+import './ValidateLogin'
+import './ValidateProduct'
+import './ValidateFilter'
