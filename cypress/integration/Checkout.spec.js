@@ -2,8 +2,9 @@
 
 describe('Fluxo de checkout no site Swag Labs', function() {
     beforeEach(function() {
-        cy.visit('https://www.saucedemo.com')
-        cy.title().should('be.equal', 'Swag Labs', { timeout: 10000 })
+        cy.visit('https://www.saucedemo.com/')
+        cy.title().should('be.equal', 'Swag Labs', { timeout: 15000 })
+        cy.url().should('be.equal', 'https://www.saucedemo.com/');
         cy.loginError()
         cy.loginSuccess()
     })
@@ -18,10 +19,15 @@ describe('Fluxo de checkout no site Swag Labs', function() {
         cy.validateFilterPriceLowToHigh()
         cy.validateFilterPriceHighToLow()
     })
-
-    it.only('Validação de que o produto está sendo adicionado ao carrinho', function() {
+    it('Validação de que o produto está sendo adicionado ao carrinho', function() {
         cy.validateAddCart()
         cy.validateRemoveCart()
         cy.validateMyCart()
+    })
+    it('Validação do checkout', function() {
+        cy.validateCheckout()
+    })
+    it('Validação Logout', function() {
+        cy.validateLogout()
     })
 })
