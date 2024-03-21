@@ -30,5 +30,5 @@ O objetivo deste projeto é automatizar os testes de funcionalidade do site Swag
 ![image](https://github.com/GabrielH1010/SwagLabs_automation/assets/92988574/9eb87cc0-874c-4337-9e2d-224088fdb94c)
 
 ## Contribuição
-Contribuições são bem-vindas! Sinta-se à vontade para abrir um problema ou enviar uma solicitação de pull request para melhorias, correções de bugs, etc.
+Contribuições são bem-vindas! Sinta-se à vontade para entrar em contato ou uma solicitação de pull request para melhorias, correções de bugs, melhorias de documentação, etc.
 
